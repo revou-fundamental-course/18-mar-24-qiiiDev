@@ -1,0 +1,323 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #222831;
+  box-sizing: border-box;
+}
+.container1 {
+  border-radius: 10px;
+  width: 920px;
+  margin: auto;
+  background-color: #31363f;
+}
+header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .img_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+.img_header {
+  display: flex;
+  flex-direction: row;
+}
+.img_header .gambar {
+  margin-right: 4px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/img/Gojo-removebg.png);
+  background-color: antiquewhite;
+}
+.img_header h4 {
+  color: antiquewhite;
+}
+header .nav button {
+  width: 100px;
+  font-size: 12px;
+  border-radius: 12px;
+  border: none;
+  background-color: #76abae;
+  height: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+header .nav button:hover {
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+aside .judul {
+  text-align: center;
+  color: antiquewhite;
+  text-transform: capitalize;
+}
+aside .judul h1,
+h3 {
+  margin: 50px;
+}
+.kotak_utama {
+  display: grid;
+  grid-template-areas:
+    "gambar content2"
+    "komentar content2"
+    "lorem content2";
+}
+
+.tanggapan {
+  margin-left: 30px;
+  grid-area: "komentar";
+}
+.deskripsi1 {
+  display: flex;
+  align-items: center;
+}
+.tanggapan .deskripsi1 .orang1 {
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(/img/Gojo-removebg.png);
+  background-color: antiquewhite;
+}
+.kotak_utama .kotak1 {
+  width: 430px;
+  color: antiquewhite;
+}
+.kotak_utama .kotak2 {
+  width: 430px;
+  background-color: #76abae;
+  border-radius: 10px;
+}
+.kotak_utama .kotak2 {
+  height: 600px;
+}
+.slide {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+.slide-container {
+  position: relative  ;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.deskripsi2 {
+  margin: 30px;
+  grid-area: "lorem";
+}
+.list .listnomor1,
+.listnomor2,
+.listnomor3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  color: #222831;
+}
+.list .list2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.kotak2 .p1,
+.p2 {
+  margin: 30px;
+}
+.kotak2 .p2 input,
+select,
+button {
+  margin: 10px;
+  height: 40px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+}
+.kotak2 .p2 button {
+  font-size: 20px;
+  color: antiquewhite;
+  background-color: #222831;
+  box-shadow: 0 0 10px 0;
+  text-transform: capitalize;
+}
+.kotak2 .p2 button:hover {
+  color: antiquewhite;
+  background-color: #31363f;
+}
+.kotak2 form {
+  margin-right: 20px;
+}
+main h1 {
+  text-align: center;
+}
+.container2 {
+  border-radius: 10px;
+  width: 920px;
+  margin: auto;
+  background-color: #31363f;
+}
+.tempatwisata {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Dua kolom dengan lebar yang sama */
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+}
+
+.tempatwisata div {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+.tempatnya {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.tempatnya .gambar-bintang {
+  margin: 0px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: antiquewhite;
+}
+.tempatnya .gambar-bintang p {
+  text-align: justify;
+}
+.contact-us {
+  color: antiquewhite;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.contact-us button {
+  border-radius: 12px;
+  border: none;
+  background-color: #76abae;
+  cursor: pointer;
+  width: 80%;
+}
+.contact-us button:hover {
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+.container2 .footer {
+  text-align: center;
+  padding: 10px;
+  color: wheat;
+}
+
+@media only screen and (max-width: 1000px) {
+  header .nav button {
+    margin: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 75px;
+    font-size: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #76abae;
+    height: 30px;
+    cursor: pointer;
+  }
+  body {
+    font-size: 15x;
+  }
+  header .nav button:hover {
+    border-radius: 10px;
+    background-color: aliceblue;
+  }
+.slide-container{
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+
+}
+  body aside .kotak1 .slide {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .container1 {
+    width: 100%;
+    border-radius: 8px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .kotak_utama {
+    display: block;
+  }
+  .kotak_utama .kotak1,
+  .kotak_utama .kotak2 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .deskripsi2 .list {
+    margin-left: 2px;
+    padding: 20px;
+  }
+  .tanggapan .komentar p {
+    margin-right: 20px;
+  }
+
+  .slide {
+    height: 200px;
+    background-position: center;
+  }
+  .deskripsi2 {
+    margin: 20px 20px;
+    text-align: justify;
+  }
+   .container2 .tempatwisata{
+    display: block;
+    flex-direction: row;
+   }
+  .container2 {
+    width: 100%;
+    border-radius: 8px;
+    margin: 0;
+    box-sizing: border-box;
+}
